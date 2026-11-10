@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SubWatch — Privacy Policy</title>
+    <style>
+        :root {
+            --primary: #2563EB;
+            --bg: #0B0F19;
+            --card-bg: rgba(255, 255, 255, 0.05);
+            --border: rgba(255, 255, 255, 0.1);
+            --text: #F3F4F6;
+            --muted: #9CA3AF;
+            --tag-bg: rgba(37, 99, 235, 0.15);
+            --tag-text: #60A5FA;
+        }
+        @media (prefers-color-scheme: light) {
+            :root {
+                --primary: #2563EB;
+                --bg: #F8FAFC;
+                --card-bg: #FFFFFF;
+                --border: #E2E8F0;
+                --text: #0F172A;
+                --muted: #64748B;
+                --tag-bg: #EFF6FF;
+                --tag-text: #1D4ED8;
+            }
+        }
+        * { box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", -apple-system-subheading, "Segoe UI", Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 40px 20px;
+            line-height: 1.65;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container { max-width: 760px; margin: 0 auto; }
+        .header { text-align: center; margin-bottom: 36px; }
+        .app-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 16px;
+            background: var(--tag-bg);
+            color: var(--tag-text);
+            border-radius: 999px;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+        .logo { font-size: 52px; margin-bottom: 8px; display: inline-block; }
+        h1 { font-size: 34px; font-weight: 800; margin: 0 0 8px 0; letter-spacing: -0.5px; }
+        .subtitle { color: var(--muted); font-size: 16px; margin: 0 0 24px 0; }
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-bottom: 32px;
+        }
+        .nav-link {
+            color: var(--text);
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            padding: 8px 16px;
+            border-radius: 999px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+        .nav-link.active, .nav-link:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 32px;
+            margin-bottom: 24px;
+            backdrop-filter: blur(12px);
+        }
+        h2 { font-size: 22px; font-weight: 700; margin-top: 0; margin-bottom: 12px; color: var(--primary); }
+        h3 { font-size: 16px; font-weight: 600; margin-top: 20px; margin-bottom: 8px; }
+        p, li { color: var(--text); font-size: 15px; }
+        ul { padding-left: 20px; margin-bottom: 16px; }
+        li { margin-bottom: 8px; }
+        .info-box {
+            background: var(--tag-bg);
+            border-left: 4px solid var(--primary);
+            padding: 14px 18px;
+            border-radius: 8px;
+            margin: 16px 0;
+            font-size: 14px;
+            color: var(--text);
+        }
+        .footer {
+            text-align: center;
+            font-size: 13px;
+            color: var(--muted);
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="app-badge">Official Apple App Store Legal Portal</div>
+            <div class="logo">🛡️</div>
+            <h1>SubWatch Privacy Policy</h1>
+            <div class="subtitle">Complete Privacy Transparency • Zero Data Harvesting</div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="privacy.html" class="nav-link active">Privacy Policy</a>
+                <a href="support.html" class="nav-link">Support & FAQ</a>
+                <a href="terms.html" class="nav-link">Terms of Use</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>🛡️ Privacy Policy</h2>
+            <p><strong>Last Updated: November 2026</strong></p>
+            <p>At <strong>SubWatch</strong>, developed by <strong>Mark Varga</strong>, we believe your personal finances are your private business. Our application is engineered from the ground up to operate offline-first and on-device without harvesting, selling, or transmitting your data.</p>
+            
+            <div class="info-box">
+                <strong>Summary for App Store Review:</strong> SubWatch collects NO personal data, employs NO advertising or tracking SDKs, and stores 100% of your subscription entries locally in an encrypted SwiftData container on your iPhone.
+            </div>
+
+            <h3>1. What Data We Collect</h3>
+            <p><strong>None.</strong> We do not collect, transmit, or store any personal information on external servers.</p>
+            <ul>
+                <li><strong>No Account Required:</strong> SubWatch requires no registration, email address, password, or login credentials.</li>
+                <li><strong>No Banking Credentials:</strong> SubWatch never prompts for bank logins, credit card numbers, or third-party bank linking.</li>
+                <li><strong>No Analytics or Tracking:</strong> SubWatch contains zero telemetry, analytics frameworks (e.g. Google Firebase, Meta SDK, AppsFlyer, Adjust), or third-party ad networks.</li>
+            </ul>
+
+            <h3>2. Local On-Device Data Storage</h3>
+            <p>All subscription records, prices, renewal dates, categories, icons, and currency preferences are saved directly on your physical iPhone using Apple's <strong>SwiftData</strong> framework. Data remains isolated in the application sandbox and is protected by iOS device-level encryption.</p>
+
+            <h3>3. Payment Reminders & Notifications</h3>
+            <p>SubWatch schedules notification alerts locally on your device via Apple's native <code>UserNotifications</code> framework. No notification payload is sent across the internet.</p>
+
+            <h3>4. In-App Purchases (StoreKit 2)</h3>
+            <p>Transactions for SubWatch Pro are processed exclusively by Apple. We never see or store your payment details. Apple provides only cryptographically signed receipts to verify your purchase status on-device.</p>
+
+            <h3>5. Data Deletion</h3>
+            <p>You can erase all saved data at any time inside the app via <strong>Settings &rarr; Erase All Data</strong>. Deleting the app also immediately deletes all stored data.</p>
+
+            <h3>6. Contact</h3>
+            <p>If you have any questions about this Privacy Policy, please contact: <a href="mailto:vargamark@icloud.com" style="color: var(--primary); font-weight: 600;">vargamark@icloud.com</a>.</p>
+        </div>
+
+        <div class="footer">
+            &copy; 2026 SubWatch. Developed by Mark Varga. All rights reserved.
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SubWatch — Customer Support & Help Center</title>
+    <style>
+        :root {
+            --primary: #2563EB;
+            --primary-hover: #1D4ED8;
+            --bg: #0B0F19;
+            --card-bg: rgba(255, 255, 255, 0.05);
+            --border: rgba(255, 255, 255, 0.1);
+            --text: #F3F4F6;
+            --muted: #9CA3AF;
+            --tag-bg: rgba(37, 99, 235, 0.15);
+            --tag-text: #60A5FA;
+            --faq-bg: rgba(255, 255, 255, 0.03);
+        }
+        @media (prefers-color-scheme: light) {
+            :root {
+                --primary: #2563EB;
+                --primary-hover: #1D4ED8;
+                --bg: #F8FAFC;
+                --card-bg: #FFFFFF;
+                --border: #E2E8F0;
+                --text: #0F172A;
+                --muted: #64748B;
+                --tag-bg: #EFF6FF;
+                --tag-text: #1D4ED8;
+                --faq-bg: #F1F5F9;
+            }
+        }
+        * { box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", -apple-system-subheading, "Segoe UI", Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 40px 20px;
+            line-height: 1.65;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container { max-width: 760px; margin: 0 auto; }
+        .header { text-align: center; margin-bottom: 36px; }
+        .app-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 16px;
+            background: var(--tag-bg);
+            color: var(--tag-text);
+            border-radius: 999px;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+        .logo { font-size: 52px; margin-bottom: 8px; display: inline-block; }
+        h1 { font-size: 34px; font-weight: 800; margin: 0 0 8px 0; letter-spacing: -0.5px; }
+        .subtitle { color: var(--muted); font-size: 16px; margin: 0 0 24px 0; }
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-bottom: 32px;
+        }
+        .nav-link {
+            color: var(--text);
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            padding: 8px 16px;
+            border-radius: 999px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+        .nav-link.active, .nav-link:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 32px;
+            margin-bottom: 24px;
+            backdrop-filter: blur(12px);
+        }
+        h2 { font-size: 22px; font-weight: 700; margin-top: 0; margin-bottom: 12px; color: var(--primary); }
+        .faq-item {
+            background: var(--faq-bg);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 20px;
+            margin-bottom: 16px;
+        }
+        .faq-q { font-size: 17px; font-weight: 700; margin-bottom: 8px; color: var(--text); }
+        .faq-a { font-size: 15px; color: var(--muted); margin: 0; line-height: 1.6; }
+        .contact-box {
+            text-align: center;
+            padding: 36px 20px;
+            background: linear-gradient(180deg, rgba(37, 99, 235, 0.08) 0%, rgba(37, 99, 235, 0.02) 100%);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            margin-top: 24px;
+        }
+        .contact-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--primary);
+            color: white;
+            padding: 14px 28px;
+            border-radius: 999px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 15px;
+            margin-top: 16px;
+            transition: background 0.2s;
+        }
+        .contact-btn:hover { background: var(--primary-hover); }
+        .footer {
+            text-align: center;
+            font-size: 13px;
+            color: var(--muted);
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="app-badge">Official Apple App Store Support Portal</div>
+            <div class="logo">💬</div>
+            <h1>SubWatch Support</h1>
+            <div class="subtitle">Frequently Asked Questions & Developer Assistance</div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="support.html" class="nav-link active">Support & FAQ</a>
+                <a href="privacy.html" class="nav-link">Privacy Policy</a>
+                <a href="terms.html" class="nav-link">Terms of Use</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <div class="faq-q">1. How do I restore my SubWatch Pro purchase?</div>
+                <div class="faq-a">
+                    If you reinstall SubWatch or switch to a new iPhone, your purchase is never lost. Open SubWatch &rarr; go to <strong>Settings</strong> &rarr; tap <strong>SubWatch Pro</strong> &rarr; tap <strong>Restore Purchases</strong>. Your Apple ID will verify the license via StoreKit 2 and unlock your features immediately without charging you again.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">2. How do I cancel an auto-renewing subscription?</div>
+                <div class="faq-a">
+                    Subscriptions on iOS are securely managed by Apple. To change or cancel your subscription at any time:
+                    <br>1. Open your iPhone <strong>Settings</strong> app.
+                    <br>2. Tap your <strong>Apple ID name</strong> at the top.
+                    <br>3. Tap <strong>Subscriptions</strong>.
+                    <br>4. Select <strong>SubWatch</strong> and choose <strong>Cancel Subscription</strong>.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">3. Why doesn't SubWatch connect to my bank account?</div>
+                <div class="faq-a">
+                    SubWatch is built on a <strong>privacy-first philosophy</strong>. We intentionally do not use third-party banking aggregators (like Plaid) to ensure your bank credentials and financial history are never transmitted over the internet or stored on external cloud databases. You retain 100% control of your records.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">4. Why am I not receiving payment reminder notifications?</div>
+                <div class="faq-a">
+                    Ensure notifications are enabled on your iPhone:
+                    <br>1. Open iPhone <strong>Settings</strong> &rarr; <strong>Notifications</strong> &rarr; <strong>SubWatch</strong>.
+                    <br>2. Ensure <strong>Allow Notifications</strong> is toggled ON.
+                    <br>3. Inside SubWatch, verify that reminders are enabled under <strong>Settings &rarr; Notifications</strong>.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">5. How do I change the display currency?</div>
+                <div class="faq-a">
+                    Open SubWatch &rarr; navigate to <strong>Settings</strong> &rarr; tap <strong>Currency</strong>. Choose EUR (€), USD ($), GBP (£), HUF (Ft), CHF, CAD, AUD, or other global currencies. All totals, monthly projections, and averages will automatically update.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">6. How can I delete all my data?</div>
+                <div class="faq-a">
+                    Under <strong>Settings &rarr; Erase All Data</strong>, you can permanently delete all subscriptions and custom records at any time. Deleting the SubWatch app from your device also instantly erases the local SwiftData container.
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-box">
+            <h2>Need Further Assistance?</h2>
+            <p style="color: var(--muted); max-width: 500px; margin: 0 auto;">
+                Have a question that isn't answered here, a bug to report, or a feature suggestion? Contact the developer directly:
+            </p>
+            <a href="mailto:vargamark@icloud.com?subject=SubWatch%20Customer%20Support" class="contact-btn">
+                ✉️ Contact Developer (vargamark@icloud.com)
+            </a>
+            <p style="font-size: 13px; color: var(--muted); margin-top: 16px;">
+                Direct inquiries are usually answered within 24-48 business hours.
+            </p>
+        </div>
+
+        <div class="footer">
+            &copy; 2026 SubWatch. Developed by Mark Varga. All rights reserved.<br>
+            Designed exclusively for iOS 17+. Built with SwiftUI & SwiftData.
+        </div>
+    </div>
+</body>
+</html>
